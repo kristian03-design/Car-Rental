@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Rent</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="top-bar">
@@ -18,26 +28,27 @@
                 <span>&#9742; +639 123 456 7890</span>
                 <span>&#9993; <a href="mailto:smart.rental@gmail.com">smart.rental@gmail.com</a></span>
             </div>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <div class="social-icons original-colors">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
             </div>
         </div>
-        <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding-top: 10px;">
+        <hr>
+        <div class="nav-container">
             <div class="logo">
-            <img src="images/Smart rental.png" alt="smart rental"></div>
+                <img src="images/Smart rental.png" alt="smart rental">
+            </div>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Rent Car</a></li>
-                    <li><a href="#">Services</a></li>
                     <li><a href="#">About Us</a></li>
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <a href="#" class="sign-in">Sign in</a>
+                <a href="login.html" class="sign-in">Sign in</a>
                 <a href="#" class="sign-up">Sign up</a>
             </div>
         </div>
@@ -45,13 +56,13 @@
     <section class="main">
         <h1>SMART RENT</h1>
         <p>Experience hassle-free, automated car rentals—quick, secure, and available anytime you need.</p>
-        <img src="images/woman-sits-car-holds-out-her-hand-receive-car-keys_1150-51920.png">
-    </div>
+        </div>
+    </section>
     <div class="booking-container">
         <!-- Location -->
         <div class="booking-item">
             <i class="fas fa-map-marker-alt" style="color: #FFC107;"></i>
-           <label>Location</label>
+            <label>Location</label>
             <select>
                 <option>Choose Location</option>
                 <option>Baliwag, Bulacan</option>
@@ -59,8 +70,6 @@
                 <option>Pulilan, Bulacan</option>
             </select>
         </div>
-
-    
         <div class="booking-item">
             <i class="fa-solid fa-car-side" style="color: #07ff98;"></i>
             <label>Car Type</label>
@@ -71,115 +80,170 @@
                 <option>Truck</option>
             </select>
         </div>
-
-        
         <div class="booking-item">
             <i class="fas fa-calendar-alt" style="color: #C62828;"></i>
-            <label> Pickup Date</label>
+            <label> Pickup</label>
             <input type="date" value="2025-02-22">
         </div>
-
-      
         <div class="booking-item">
             <i class="fas fa-calendar-alt" style="color: #06ad38;"></i>
-           <label>Return Date</label>
+            <label>Return</label>
             <input type="date" value="2025-02-27">
         </div>
-
-       
         <button class="book-btn">Book</button>
     </div>
-
-</section>
-
-<section>
-    <body>
-        <div class="container">
-            <div class="text-content">
-                <div class="title">We are trusted by thousands of riders</div>
-                <p class="text">At Smart Rental, we take pride in providing a trusted, hassle-free, and top-quality car rental experience. Whether you need a ride for a quick trip or a long adventure, we ensure reliable vehicles, transparent pricing, and excellent customer service.</p>
-            </div>
-            <div class="image">
-                <img src="images/car.png" alt="Car">
-            </div>
-        </div>
-        <div class="brands">
-            <img src="images/pngimg.com - honda_PNG102928.png" alt="Honda">
-            <img src="images/jaguar-logo-2021-download.png" alt="Jaguar">
-            <img src="images/nissan-2020-new-logo.jpg" alt="Nissan">
-            <img src="images/volvo.png" alt="Volvo">
-            <img src="images/audi-1-logo-png-transparent.png" alt="Audi">
-            <img src="images/png-transparent-toyota-black-logo-car-logos.png" alt="Toyota">
-        </div>
     </div>
-</section>
-<section>
-    <div class="divider"></div>
-</section>
+
+    </section>
 
     <section>
-     <div class="rental-section">
-        <p class="discount">20% off for <span>Online Booking</span></p>
-        <h2>Our Trending Rental Cars</h2>
-        <div class="cards-container">
-            <div class="card">
-                <img src="images/vios.png" alt="Toyota Vios">
-                <h3>TOYOTA VIOS 1.3 XLE CVT</h3>
-                <p class="rating">⭐ 4.8 (2,992 Reviews)</p>
-                <p class="location">📍 Pulilan, Bulacan</p>
-                <p class="features">5 Seats &nbsp; ⛽ Gas &nbsp; ⚙️ CVT</p>
-                <p class="price">₱3,000/Day</p>
-                <button>See More</button>
+
+        <body>
+            <div class="container">
+                <div class="text-content">
+                    <div class="title">We are trusted by thousands of riders</div>
+                    <p class="text">At Smart Rental, we take pride in providing a trusted, hassle-free, and top-quality
+                        car rental experience. Whether you need a ride for a quick trip or a long adventure, we ensure
+                        reliable vehicles, transparent pricing, and excellent customer service.</p>
+                </div>
+                <div class="image">
+                    <img src="images/image-removebg-preview (8) 1.png" alt="Car">
+                </div>
             </div>
-            <div class="card">
-                <img src="images/honda br.png" alt="Honda BR-V">
-                <h3>HONDA BR-V CVT</h3>
-                <p class="rating">⭐ 5.0 (2,992 Reviews)</p>
-                <p class="location">📍 Pulilan, Bulacan</p>
-                <p class="features">7 Seats &nbsp; ⛽ Gas &nbsp; ⚙️ CVT</p>
-                <p class="price">₱6,000/Day</p>
-                <button>See More</button>
+            <div class="brands">
+                <img src="images/pngimg.com - honda_PNG102928.png" alt="Honda">
+                <img src="images/jaguar-logo-2021-download.png" alt="Jaguar">
+                <img src="images/nissan-2020-new-logo.jpg" alt="Nissan">
+                <img src="images/volvo.png" alt="Volvo">
+                <img src="images/audi-1-logo-png-transparent.png" alt="Audi">
+                <img src="images/png-transparent-toyota-black-logo-car-logos.png" alt="Toyota">
             </div>
-            <div class="card">
-                <img src="images/nissan terra.png" alt="Nissan Terra SUV">
-                <h3>NISSAN TERRA SUV</h3>
-                <p class="rating">⭐ 4.5 (2,992 Reviews)</p>
-                <p class="location">📍 Pulilan, Bulacan</p>
-                <p class="features">&nbsp; 7 Seats &nbsp; ⛽ Diesel &nbsp; ⚙️ Manual</p>
-                <p class="price">₱6,000/Day</p>
-                <button>See More</button>
             </div>
-            <div class="card">
-                <img src="images/vios.png" alt="Toyota Vios">
-                <h3>TOYOTA VIOS 1.3 XLE CVT</h3>
-                <p class="rating">⭐ 4.8 (2,992 Reviews)</p>
-                <p class="location">📍 Pulilan, Bulacan</p>
-                <p class="features">5 Seats &nbsp; ⛽ Gas &nbsp; ⚙️ CVT</p>
-                <p class="price">₱3,000/Day</p>
-                <button>See More</button>
-            </div>
-            <div class="card">
-                <img src="images/honda br.png" alt="Honda BR-V">
-                <h3>HONDA BR-V CVT</h3>
-                <p class="rating">⭐ 5.0 (2,992 Reviews)</p>
-                <p class="location">📍 Pulilan, Bulacan</p>
-                <p class="features">7 Seats &nbsp; ⛽ Gas &nbsp; ⚙️ CVT</p>
-                <p class="price">₱6,000/Day</p>
-                <button>See More</button>
-            </div>
-            <div class="card">
-                <img src="images/nissan terra.png" alt="Nissan Terra SUV">
-                <h3>NISSAN TERRA SUV</h3>
-                <p class="rating">⭐ 4.5 (2,992 Reviews)</p>
-                <p class="location">📍 Pulilan, Bulacan</p>
-                <p class="features">&nbsp; 7 Seats &nbsp; ⛽ Diesel &nbsp; ⚙️ Manual</p>
-                <p class="price">₱6,000/Day</p>
-                <button>See More</button>
-            </div>
-        
     </section>
-    </body>
-    
-</section>
+    <hr>
+
+    <section>
+        <div class="rental-section">
+            <p class="discount">20% off for <span>Online Booking</span></p>
+            <h2>Our Trending Rental Cars</h2>
+        </div>
+
+        <div class="car-cards">
+            <div class="car-card">
+                <img src="images/image-5.png" alt="Toyota Corolla Altis 2023">
+                <h3>TOYOTA COROLLA ATLIS 2023</h3>
+                <p>⭐ 4.8 (2,992 Reviews)</p>
+                <p>📍 Pulilan, Bulacan</p>
+                <p>🚗 5 Seats ⛽ Gas ⚙️ CVT</p>
+                <span>₱3,000/Day</span>
+                <a href="toyota-corolla-altis-2023.html"><button>See More</button></a>
+            </div>
+            <div class="car-card">
+                <img src="images/image.png" alt="Honda BR-V CVT">
+                <h3>HONDA BR-V CVT</h3>
+                <p>⭐ 5.0 (2,992 Reviews)</p>
+                <p>📍 Pulilan, Bulacan</p>
+                <p>🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                <span>₱6,000/Day</span>
+                <a href="honda-br-v-cvt.html"><button>See More</button></a>
+            </div>
+            <div class="car-card">
+                <img src="images/image.png" alt="Nissan Terra SUV">
+                <h3>NISSAN TERRA SUV</h3>
+                <p>⭐ 4.5 (2,992 Reviews)</p>
+                <p>📍 Pulilan, Bulacan</p>
+                <p>🚗 7 Seats ⛽ Diesel ⚙️ Manual</p>
+                <span>₱6,000/Day</span>
+                <a href="nissan-terra-suv.html"><button>See More</button></a>
+            </div>
+            <div class="car-card">
+                <img src="images/image-2.png" alt="Audi Q3 SUV">
+                <h3>AUDI Q3 SUV</h3>
+                <p>⭐ 4.8 (2,992 Reviews)</p>
+                <p>📍 Pulilan, Bulacan</p>
+                <p>🚗 5 Seats ⛽ Gas ⚙️ Automatic</p>
+                <span>₱4,800/Day</span>
+                <a href="audi-q3-suv.html"><button>See More</button></a>
+            </div>
+            <div class="car-card">
+                <img src="images/image-4.png" alt="Volvo S60">
+                <h3>VOLVO S60</h3>
+                <p>⭐ 4.8 (2,992 Reviews)</p>
+                <p>📍 Pulilan, Bulacan</p>
+                <p>🚗 5 Seats ⛽ Gas ⚙️ Automatic</p>
+                <span>₱3,500/Day</span>
+                <a href="volvo-s60.html"><button>See More</button></a>
+            </div>
+            <div class="car-card">
+                <img src="images/image-3.png" alt="Jaguar E-Pace">
+                <h3>JAGUAR E-PACE</h3>
+                <p>⭐ 4.8 (2,992 Reviews)</p>
+                <p>📍 Pulilan, Bulacan</p>
+                <p>🚗 5 Seats ⛽ Gas ⚙️ Automatic</p>
+                <span>₱9,000/Day</span>
+                <a href="jaguar-e-pace.html"><button>See More</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/Ellipse 4.png" alt="Smart Rent Logo">
+                <p>"Smart Rental provides reliable, affordable, and hassle-free car rentals for every journey. Whether
+                    it's a short trip or a long adventure, we ensure a smooth and comfortable ride every time."</p>
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Details</li>
+                    <li>Operating Hours</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Browse Cars</li>
+                    <li>Pricing</li>
+                    <li>FAQs</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Booking Assistance</li>
+                    <li>Cancellation & Refund Policy</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Your Email Address">
+                <button>Subscribe</button>
+                <p>Subscribe to our newsletter to receive the latest news, updates, and special offers.</p>
+                <div class="payment-methods">
+                    <h3>Payment Methods</h3>
+                    <img src="images/image 61.png" alt="Visa">
+                    <img src="images/image 62.png" alt="MasterCard">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>© 2025 Smart Rental. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
