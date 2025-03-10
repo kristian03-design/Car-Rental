@@ -596,106 +596,168 @@ footer {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: white; 
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+/* Container */
 .login-container {
-    background-color: #115742; /* dark green background */
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    
+    
+}
+
+/* Login Box */
+.login-box {
+    background: #1c4b37;
     color: white;
-    width: 400px;
-    position: relative; /* for positioning the car image */
-
-}
-/* Title */
-.login-container h2{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.login-container p {
-    margin-top: 2px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-weight: 300;
-}
-
-/* Input fields */
-.input-field {
-    margin-bottom: 20px;
-}
-
-/* Input styles */
-.input-field input {
-    width: 100%;
-    padding: 10px;
+    padding: 50px 50px;
+    padding-top: 70px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    width: 450px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+    position: relative;
+    left: 100px;
 }
 
-/* Login button */
-.login-button {
+.login-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.login-box p {
+    margin-bottom: 20px;
+    color: #c0c0c0;
+    font-size: 14px;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 150px;
+    height: auto;      
+    margin-bottom: 30px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 40px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
     width: 100%;
     padding: 10px;
-    background-color: #1d1b20; /* login button color */
     border: none;
-    border-radius: 15px;
-    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.password-container {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    position: relative; 
+}
+
+.password-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 40px; /* Ensure it matches the email input */
+}
+
+.eye-icon {
     cursor: pointer;
     font-size: 16px;
-    margin-top: 17px;
-}
-.login-button:hover {
-    background-color: #008E8E; 
-}
-
-.car-image {
+    color: #555;
     position: absolute;
-    left: -60px; 
-    top: -px; 
-    width: 250px; 
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
 }
-.signup{
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 300;
-    color: #f0f0f0;
+
+/* Links */
+.forgot {
+    text-align: right;
+    display: block;
+    color: #c0c0c0;
     font-size: 12px;
+    margin-top: 5px;
 }
-.signup a{
-    color: #2FCB9C;
+
+button {
+    background: #1D1B20;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 80%;
+    align-self: center;
+}
+
+/* Sign Up */
+.signup {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup a {
+    color: #48c774;
     text-decoration: none;
-    font-weight: 400;
-    margin-left: 5px;
 }
-.forgot-password{
+
+/* Car Section */
+.car-container {
+    position: relative;
     text-align: center;
-    margin-top: 20px;
-    font-weight: 300;
-    color: #f0f0f0;
-    font-size: 12px;
-    margin-left: 99px;
-}
-.checkbox {
-    align-items: center;
-    font-size: 12px;
-    font-weight: 300;
-    margin-left: 10px;   
-}
-.input-field label {
-    font-weight: 350;
-    color: #f0f0f0;
-    font-size: 15px;
-    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 700px;
+    height: 700px;
 }
 
-/* Responsive design */
-@media (max-width: 760px) {
-    .login-container {
-        width: 90%;
-    }
+.car-container img {
+    width: 90%;
+    top: 30%;
+    left: 10%;
+    position: relative;
+}
 
-    .car-image {
-        width: 150px; /* Adjust for smaller screens */
-        right: -40px; /* Adjust accordingly */
-    }
+.circle {
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(to bottom, #1c4b37, #37a476);
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
 }
