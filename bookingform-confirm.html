@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function printReceipt() {
+            alert("Receipt is being printed!");
+            // Here you can add the actual print functionality if needed
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div>
+                <span><i class="fas fa-phone"></i> +639 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> <a
+                        href="mailto:smart.rental@gmail.com">smart.rental@gmail.com</a></span>
+            </div>
+            <div class="social-icons-original-colors">
+                <a href="#"><i class="fab fa-instagram" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-facebook" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-telegram" style="color: inherit;"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Smart rental.png" alt="smart rental">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Rent Car</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="sign-in">Sign in</a>
+                <a href="#" class="sign-up">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <div class="title-container">
+        <h2 class="title">Booking Form</h2>
+
+        <!-- Steps Navigation -->
+        <div class="steps">
+            <div class="step">1 <span>Details</span></div>
+            <div class="step">2 <span>Customer</span></div>
+            <div class="step">3 <span>Payment</span></div>
+            <div class="step active">4 <span>Confirm</span></div>
+        </div>
+    </div>
+    <div class="booking-form-confirm-container">
+        <form action="index.html"></form>
+        <h2>Booking Confirmed! 🎉</h2>
+        <p>Thank you and Come Again!</p>
+        <div class="details">
+            <p><strong>Reference Number:</strong><span> SR-20250310-1234</p></span>
+            <p><strong>Rental Period:</strong> <span>March 10, 2025 - March 13, 2025</p></span>
+            <p><strong>Car:</strong> <span>Toyota Corolla Altis 2023</p></span>
+            <p><strong>Pickup Location:</strong> <span>Smart Rent - Pulilan, Bulacan</p></span>
+            <p><strong>Email Confirmation Sent to:</strong> <span>juandelacruz@email.com</p></span>
+            <p><strong>SMS Confirmation Sent to:</strong> <span>+639123456789</p></span>
+        </div>
+        <hr>
+        <div class="booking-form-payment-buttons">
+        <a href="index.html"> <button class="btn dashboard">Go to Dashboard</button></a>
+            <button class="btn receipt" onclick="printReceipt()">Print Receipt</button>
+            <a href="bookingform-payment.html"><button class="bookingform-confirm-back">← Back</button></a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div>
+                <span><i class="fas fa-phone"></i> +639 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> <a
+                        href="mailto:smart.rental@gmail.com">smart.rental@gmail.com</a></span>
+            </div>
+            <div class="social-icons-original-colors">
+                <a href="#"><i class="fab fa-instagram" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-facebook" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-telegram" style="color: inherit;"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Smart rental.png" alt="smart rental">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Rent Car</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="sign-in">Sign in</a>
+                <a href="#" class="sign-up">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <div class="title-container">
+        <h2 class="title">Booking Form</h2>
+
+        <!-- Steps Navigation -->
+        <div class="steps">
+            <div class="step">1 <span>Details</span></div>
+            <div class="step">2 <span>Customer</span></div>
+            <div class="step active">3 <span>Payment</span></div>
+            <div class="step">4 <span>Confirm</span></div>
+        </div>
+    </div>
+    <div class="payment-container">
+        <h2>Payment Method</h2>
+        <div class="payment-options">
+            <label><input type="checkbox" name="payment" checked> <img src="images/gcash.png" alt="GCash"></label>
+            <label><input type="checkbox" name="payment"> <img src="images/visa.png" alt="Visa"></label>
+            <label><input type="checkbox" name="payment"> <img src="images/master card.png" alt="Mastercard"></label>
+            <label><input type="checkbox" name="payment"> <img src="images/paypal.png" alt="PayPal"></label>
+        </div>
+
+        <div class="payment-card-details">
+            <label>Card Number</label>
+            <input type="text" placeholder="0000 0000 0000 0000">
+            <label>Expiry Date</label>
+            <div class="expiry-date">
+                <select>
+                    <option>Year</option>
+                </select>
+                <select>
+                    <option>Month</option>
+                </select>
+                <select>
+                    <option>Day</option>
+                </select>
+            </div>
+        </div>
+        <div class="deposit-required">
+        <p>Deposit Required: <span class="highlight">₱5,000</span></p>
+        <div class="insurance">
+        <p>Insurance: <span>Covers Damage, Theft, Liability</p></span>
+        </div>
+        </div>
+
+        <div class="price-breakdown">
+            <p>Rental Price: <span>₱9,000</span></p>
+            <p>Deposit: <span>₱5,000 <small>(Refundable)</small></span></p>
+            <p>Add-ons: <span>₱500</span></p>
+            <hr>
+            <p class="total">Total Rental Price:<span>Php 14,500.00</p>
+        </div>
+        <a href="bookingform-customer.html"><button class="payment-back-btn">← Back</button></a>
+        <a href="bookingform-confirm.html"><button class="confirm-btn">Confirm & Pay</button></a>
+    </div>
+</body>
+
+</html>

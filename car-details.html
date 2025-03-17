@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div>
+                <span><i class="fas fa-phone"></i> +639 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> <a
+                        href="mailto:smart.rental@gmail.com">smart.rental@gmail.com</a></span>
+            </div>
+            <div class="social-icons-original-colors">
+                <a href="#"><i class="fab fa-instagram" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-facebook" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-telegram" style="color: inherit;"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Smart rental.png" alt="smart rental">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rent-cars.html">Rent Car</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="sign-in">Sign in</a>
+                <a href="#" class="sign-up">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <div class="car-details-container">
+        <div class="car-detail">
+            <div class="car-slider">
+                <div class="car-details-image">
+                    <img id="car-details-img" src="images/toyota-vios-car-details.png" class="car-detail-img" alt="Car Image 1">
+                </div>
+                <div class="car-thumbnails">
+                    <img src="images/toyota-corolla-small-img.png" onclick="changeImage('images/toyota-corolla-small-img.png')" alt="Car Image 1">
+                    <img src="images/toyota-corolla-small-img-back.png" onclick="changeImage('images/toyota-corolla-small-img-back.png')" alt="Toyota Corolla Side">
+                    <img src="images/toyota-corolla-small-img-side.png" onclick="changeImage('images/toyota-corolla-small-img-side.png')" alt="Toyota Corolla Back">
+                </div>
+            </div>
+            <div class="car-details">
+                <h1>Toyota Corolla Altis 2023</h1>
+                <p><strong>⭐⭐⭐⭐⭐ 4.8</strong> (Based on 120 reviews)</p>
+                <h3>Available ✅</h3>
+                <p><strong>Category:</strong> Sedan</p>
+                <p><strong>Seating Capacity:</strong> 5 persons</p>
+                <p><strong>Luggage Capacity:</strong> 2 large bags + 2 small bags</p>
+                <p><strong>Transmission:</strong>Continuously Variable Transmission (CVT)</p>
+                <p><strong>Fuel Type:</strong> Hybrid (Gasoline + Electric)</p>
+                <p><strong>Engine Power:</strong> 1.8L 4-cylinder, 121 HP</p>
+                <h2>Rental Price:</h2>
+                <span>Php 3,000 / Day</span>
+                <a href="#" class="car-details-btn">Book Now</a>
+            </div>
+        </div>
+        <div class="car-description">
+            <h2>Car Description</h2>
+            <p>The Toyota Corolla Altis 2023 is a fuel-efficient, comfortable, and tech-packed sedan, perfect for city drives and long trips. 
+                With its hybrid engine, smooth CVT transmission, and advanced safety features, it ensures a reliable and hassle-free ride every time.</p>
+        </div>
+        <div class="key-specification">
+            <h2>Key Specification</h2>
+            <ul>
+                <li>Mileage Limit: 200 km/day (Php 10/km for excess)</li>
+                <li> Fuel Efficiency: ~23 km/L (highway)</li>
+                <li>Drive Type: Front-Wheel Drive (FWD)</li>
+                <li>Suspension: MacPherson Strut (Front), Torsion Beam (Rear)</li>
+            </ul>
+        <div class="features">
+            <h2>Features & Amenities</h2>
+            <ul>
+                <li>Dual-Zone Automatic Climate Control</li>
+                <li>9-inch Touchscreen with Apple CarPlay & Android Auto</li>
+                <li>Bluetooth & USB Connectivity</li>
+                <li>Push Start Button & Smart Key System</li>
+                <li>Cruise Control</li>
+            </ul>
+        </div>
+        <div class="safety">
+            <h2>Safety Features</h2>
+            <ul>
+                <li>Toyota Safety Sense (TSS)</li>
+                <li>Pre-Collision System (PCS)</li>
+                <li>Lane Departure Alert (LDA)</li>
+                <li>Adaptive Cruise Control</li>
+                <li>6 Airbags (Driver, Passenger, Side, Curtain)</li>
+            </ul>
+        </div>
+        <div class="rental-terms">
+            <h2>Rental Terms & Conditions</h2>
+            <ul>
+                <li>Minimum Age Requirement: 21 years old</li>
+                <li>Deposit Required: Php 5,000 (refundable)</li>
+                <li>Fuel Policy: Full-to-Full</li>
+                <li>Insurance Coverage: Comprehensive</li>
+                <li>Cancellation Policy: Free cancellation up to 24 hours before booking</li>
+            </ul>
+        </div>
+    </div>
+    <div class="related-cars">
+        <div class="related-cars-container">
+            <div class="related-car">
+                <img src="nissan-terra.jpg" alt="Nissan Terra SUV">
+                <h3>Nissan Terra SUV</h3>
+                <p>⭐ 4.5/5 (2,992 Reviews)</p>
+                <p>📍 Pulilan, Bulacan</p>
+                <p>🚗 7 Seats | ⚙️ Diesel | Manual</p>
+            </div>
+            <div class="related-car">
+                <img src="audi-q3.jpg" alt="Audi Q3 SUV">
+                <h3>Audi Q3 SUV</h3>
+                <p>⭐ 4.8/5 (2,992 Reviews)</p>
+                <p>📍 Pulilan, Bulacan</p>
+                <p>🚗 5 Seats | ⛽ Gas | ⚙️ Automatic</p>
+            </div>
+        </div>
+    </div>
+    <!--Script Image Slider -->
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('car-details-img').src = imageSrc;
+        }
+    </script>
+</body>
+</html>

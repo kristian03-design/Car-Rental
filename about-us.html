@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rent-About Us</title>
+    <!-- Link Style Css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div>
+                <span><i class="fas fa-phone"></i> +639 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> <a
+                        href="mailto:smart.rental@gmail.com">smart.rental@gmail.com</a></span>
+            </div>
+            <div class="social-icons-original-colors">
+                <a href="#"><i class="fab fa-instagram" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-facebook" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-telegram" style="color: inherit;"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Smart rental.png" alt="smart rental">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking-form.html">Rent Car</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="sign-in">Sign in</a>
+                <a href="#" class="sign-up">Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <p>Our dedicated team ensures a smooth and hassle-free car rental experience, making every journey your best
+                one yet.</p>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel">
+                    <div class="team-member">
+                        <img src="images/Jerick.png" alt="Jerick Herrera">
+                        <h3>Jerick Herrera</h3>
+                        <p> Project Manager </p>
+                        <a href="about-us-details.html" class="button-aboutme">About Me</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/Kristian.png" alt="Kristian Lloyd Hernandez">
+                        <h3>Kristian Lloyd Hernandez</h3>
+                        <p>Front-End Developer </p>
+                        <a href="about-us-details.html" class="button-aboutme">About Me</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/Keannu.png" alt="Keannu Santos">
+                        <h3>Keannu Santos</h3>
+                        <p>Reseracher</p>
+                        <a href="about-us-details.html" class="button-aboutme">About Me</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/Jm (2).png" alt="John Mark Buzard">
+                        <h3>John Mark Buzard</h3>
+                        <p>UI/UX Design</p>
+                        <a href="about-us-details.html" class="button-aboutme">About Me</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/Randy (2).png" alt="Randy Estanislao">
+                        <h3>Randy Estanislao</h3>
+                        <p>UI/UX Designer</p>
+                        <a href="about-us-details.html" class="button-aboutme">About Me</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/merit (2).png" alt="Merit Jude Gallano">
+                        <h3>Merit Jude Gallano</h3>
+                        <p>Front-End Developer</p>
+                        <a href="about-us-details.html" class="button-aboutme">About Me</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/brian (2).png" alt="Brian Hipolito Pangan">
+                        <h3>Brian Hipolito Pangan</h3>
+                        <p>Researcher</p>
+                        <a href="about-us-details.html" class="button-aboutme">About Me</a>
+                    </div>
+                </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </section>
+        <script>
+            let slideIndex = 0;
+            showSlides(slideIndex);
+
+            function moveSlide(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("team-member");
+                let dots = document.getElementsByClassName("dot");
+
+                if (n >= slides.length) {
+                    slideIndex = 0;
+                }
+                if (n < 0) {
+                    slideIndex = slides.length - 1;
+                }
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+
+                slides[slideIndex].style.display = "block";
+                dots[slideIndex].className += " active";
+            }
+        </script>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/Ellipse 4.png" alt="Smart Rent Logo">
+                    <p>"Smart Rental provides reliable, affordable, and hassle-free car rentals for every journey.
+                        Whether
+                        it's a short trip or a long adventure, we ensure a smooth and comfortable ride every time."</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Details</li>
+                        <li>Operating Hours</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Browse Cars</li>
+                        <li>Pricing</li>
+                        <li>FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Customer Support</h3>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Booking Assistance</li>
+                        <li>Cancellation &
+                            Refund Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <input type="email" placeholder="Your Email Address">
+                    <button>Subscribe</button>
+                    <p>Subscribe to our newsletter to receive the latest news, updates, and special offers.</p>
+                    <div class="payment-methods">
+                        <h3>Payment Methods</h3>
+                        <img src="images/image 61.png" alt="Visa">
+                        <img src="images/image 62.png" alt="MasterCard">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>© 2025 Smart Rental. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

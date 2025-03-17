@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rent-About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div>
+                <span><i class="fas fa-phone"></i> +639 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> <a
+                        href="mailto:smart.rental@gmail.com">smart.rental@gmail.com</a></span>
+            </div>
+            <div class="social-icons original-colors">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Smart rental.png" alt="smart rental">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Rent Car</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="sign-in">Sign in</a>
+                <a href="#" class="sign-up">Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <a href="about-us.html" class="back-button">&larr; Back</a>
+
+        <div class="profile-container">
+            <div class="image-slider">
+                <div class="main-image">
+                    <img id="mainImage" src="image1.jpg" alt="Profile Image">
+                </div>
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="image1.jpg" onclick="changeImage('image1.jpg')" alt="Main Picture ">
+                    <img class="thumbnail" src="image2.jpg" onclick="changeImage('image2.jpg')" alt="Other Picture 2">
+                    <img class="thumbnail" src="image3.jpg" onclick="changeImage('image3.jpg')" alt="Other Picture">
+
+                </div>
+            </div>
+
+            <p class="intro-text">
+                Hi! I'm <strong>Kristian Lloyd DC Hernandez</strong>, a passionate Front-End Developer dedicated to
+                crafting visually appealing and interactive web experiences. I have a strong interest in coding and
+                design, always striving to improve my skills and stay updated with the latest web technologies.
+                Currently, I'm studying programming because I believe that understanding the fundamentals is essential
+                to becoming a skilled developer. Beyond coding, I enjoy playing online games and basketball, which help
+                me stay focused, competitive, and creative. I embrace challenges as opportunities to grow, continuously
+                pushing myself to learn and improve. My goal is to develop innovative and user-friendly websites that
+                leave a lasting impact. I look forward to expanding my expertise and contributing to exciting projects
+                in the future.
+            </p>
+        </div>
+
+        <script>
+            function changeImage(src) {
+                document.getElementById('mainImage').src = src;
+            }
+        </script>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/Ellipse 4.png" alt="Smart Rent Logo">
+                    <p>"Smart Rental provides reliable, affordable, and hassle-free car rentals for every journey.
+                        Whether
+                        it's a short trip or a long adventure, we ensure a smooth and comfortable ride every time."</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Details</li>
+                        <li>Operating Hours</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Browse Cars</li>
+                        <li>Pricing</li>
+                        <li>FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Customer Support</h3>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Booking Assistance</li>
+                        <li>Cancellation &
+                            Refund Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <input type="email" placeholder="Your Email Address">
+                    <button>Subscribe</button>
+                    <p>Subscribe to our newsletter to receive the latest news, updates, and special offers.</p>
+                    <div class="payment-methods">
+                        <h3>Payment Methods</h3>
+                        <img src="images/image 61.png" alt="Visa">
+                        <img src="images/image 62.png" alt="MasterCard">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>© 2025 Smart Rental. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

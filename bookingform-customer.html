@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div>
+                <span><i class="fas fa-phone"></i> +639 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> <a
+                        href="mailto:smart.rental@gmail.com">smart.rental@gmail.com</a></span>
+            </div>
+            <div class="social-icons-original-colors">
+                <a href="#"><i class="fab fa-instagram" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-facebook" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-telegram" style="color: inherit;"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Smart rental.png" alt="smart rental">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Rent Car</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="sign-in">Sign in</a>
+                <a href="#" class="sign-up">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <div class="title-container">
+        <h2 class="title">Booking Form</h2>
+
+        <!-- Steps Navigation -->
+        <div class="steps">
+            <div class="step">1 <span>Details</span></div>
+            <div class="step active">2 <span>Customer</span></div>
+            <div class="step">3 <span>Payment</span></div>
+            <div class="step">4 <span>Confirm</span></div>
+        </div>
+    </div>
+
+    <div class="booking-form-customer">
+        <h2>Customer Information</h2>
+        <form>
+            <form action="bookingform-payment.html"></form>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" value="Juan Dela Cruz" disabled>
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <div class="phone-group">
+                    <input type="text" value="+63" disabled class="code">
+                    <input type="text" value="9123456789" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" value="juandelacruz@gmail.com" disabled>
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <div class="address-group">
+                    <select>
+                        <option>City / Municipality</option>
+                    </select>
+                    <select>
+                        <option>Barangay</option>
+                    </select>
+                    <input type="text" placeholder="Street No. / Name">
+                </div>
+            </div>
+            <h3>Verify driver ID</h3>
+            <div class="form-group">
+                <label>Upload your driver license photo from the <strong>front</strong> side</label>
+                <input type="file">
+            </div>
+            <div class="form-group">
+                <label>Upload your driver license photo from the <strong>back</strong> side</label>
+                <input type="file">
+            </div>
+            <div class="form-group">
+                <label>Upload your selfie to verify identity</label>
+                <textarea
+                    placeholder="Do not use any filter mask and make sure your face is clearly visible on the picture."></textarea>
+            </div>
+            <div class="form-group">
+                <label>Driver license number</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>License will expire at</label>
+                <div class="date-group">
+                    <select>
+                        <option>Year</option>
+                    </select>
+                    <select>
+                        <option>Month</option>
+                    </select>
+                    <select>
+                        <option>Day</option>
+                    </select>
+                </div>
+            </div>
+            <h3>I am allowed to drive categories:</h3>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> <span>AM (mopeds)</label></span>
+                <label><input type="checkbox"> <span>A1 (small motorcycles/scooters)</label></span>
+                <label><input type="checkbox"> <span>A (motorcycles)</label></span>
+                <label><input type="checkbox"> <span>B1 (quadricycles/tricycles)</label></span>
+                <label><input type="checkbox"> <span>B (passenger cars)</label></span>
+                <label><input type="checkbox"> <span>C1 (trucks)</label></span>
+                <label><input type="checkbox"> <span>C (heavy trucks)</label></span>
+                <label><input type="checkbox"> <span>D1 (minibuses/small minivans)</label></span>
+                <label><input type="checkbox"> <span>D (buses/big minivans/9 or more seats)</label>
+            </div>
+            <h3>Additional Features (Optional)</h3>
+            <div class="checkbox-group">
+                <label><input type="checkbox" checked> GPS Navigation (+P500)</label>
+                <label><input type="checkbox"> Bluetooth & USB (+P300)</label>
+            </div>
+            <p>Total Rental Price: <strong>Php 9,500.00</strong></p>
+            <a href="booking-form.html"><button class="booking-form-back" onclick="history.back()">← Back</button></a>
+            <a href="bookingform-payment.html"><button type="submit" class="booking-form-next" formnovalidate>Next
+                    →</button></a>
+        </form>
+    </div>
+</body>
+
+</html>

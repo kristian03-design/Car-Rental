@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div>
+                <span><i class="fas fa-phone"></i> +639 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> <a
+                        href="mailto:smart.rental@gmail.com">smart.rental@gmail.com</a></span>
+            </div>
+            <div class="social-icons-original-colors">
+                <a href="#"><i class="fab fa-instagram" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-facebook" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: inherit;"></i></a>
+                <a href="#"><i class="fab fa-telegram" style="color: inherit;"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Smart rental.png" alt="smart rental">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Rent Car</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="sign-in">Sign in</a>
+                <a href="#" class="sign-up">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <div class="layout-container">
+        <header class="top-navigation">
+            <nav>
+                <label>← Home / <span>Rent Car </label></span>
+            </nav>
+        </header>
+        <aside class="filter-sidebar">
+            <h2>Filter</h2>
+            <div class="category-section">
+                <h3>Categories</h3>
+                <label><input type="checkbox" name="car_type" checked> Sedan</label>
+                <label><input type="checkbox" name="car_type"> SUV & Crossover</label>
+                <label><input type="checkbox" name="car_type"> Vans & MPVs</label>
+                <label><input type="checkbox" name="car_type"> Luxury & Sports Cars</label>
+                <label><input type="checkbox" name="car_type"> Pickup Trucks</label>
+                <label><input type="checkbox" name="car_type"> Electric & Hybrid</label>
+            </div>
+            
+            <div class="brand-section">
+                <h3>Car Brands</h3>
+                <label><input type="checkbox" name="brand" checked> Toyota</label>
+                <label><input type="checkbox" name="brand"> Honda</label>
+                <label><input type="checkbox" name="brand"> Audi</label>
+                <label><input type="checkbox" name="brand"> Nissan</label>
+            </div>
+
+            <div class="filter-category">
+                <h3>Model Year</h3>
+                <input type="range" min="2018" max="2024" value="2022">
+                <div class="range-values">
+                    <span>2018</span> <span>2025</span>
+                </div>
+            </div>
+
+            <div class="filter-category">
+                <h3>Transmission Type</h3>
+                <label><input type="checkbox" name="transmission" value="automatic"> Automatic</label>
+                <label><input type="checkbox" name="transmission" value="manual"> Manual</label>
+            </div>
+
+            <div class="filter-category">
+                <h3>Fuel Type</h3>
+                <label><input type="checkbox" name="fuel" value="gasoline"> Gasoline</label>
+                <label><input type="checkbox" name="fuel" value="diesel"> Diesel</label>
+                <label><input type="checkbox" name="fuel" value="electric"> Electric / Hybrid</label>
+            </div>
+
+            <div class="filter-category">
+                <h3>Seating Capacity</h3>
+                <label><input type="checkbox" name="seating" value="2"> 2 Seater</label>
+                <label><input type="checkbox" name="seating" value="5"> 5 Seater</label>
+                <label><input type="checkbox" name="seating" value="7"> 7 Seater</label>
+                <label><input type="checkbox" name="seating" value="10"> 10+ Seater</label>
+            </div>
+
+            <div class="filter-category">
+                <h3>Rental Price Range (PHP)</h3>
+                <input type="range" min="1000" max="10000" value="5000">
+                <div class="range-values">
+                    <span>₱1,000</span> <span>₱10,000</span>
+                </div>
+            </div>
+
+            <div class="filter-category">
+                <h3>Additional Features</h3>
+                <label><input type="checkbox" name="features" value="gps"> GPS Navigation</label>
+                <label><input type="checkbox" name="features" value="reverse-camera"> Reverse Camera</label>
+                <label><input type="checkbox" name="features" value="bluetooth"> Bluetooth & USB</label>
+                <label><input type="checkbox" name="features" value="cruise"> Cruise Control</label>
+                <label><input type="checkbox" name="features" value="sunroof"> Sunroof</label>
+            </div>
+
+            <div class="filter-actions">
+                <h3> Action Buttons</h3>
+                <label><input type="checkbox" name="features" value="gps"> Reset Filter</label>
+                <label><input type="checkbox" name="features" value="gps"> Apply Filter</label>
+        </aside>
+        <div class="vertical-line-rentcars">
+
+        </div>
+
+        <main class="main-content">
+            <div class="main-content-topbar">
+                <div class="filter-icon">
+                    <i class="fas fa-filter"></i>
+                </div>
+                <input type="text" class="search-bar" placeholder="Search cars...">
+                <i class="fas fa-search search-icon"></i>
+                <div class="sort-filter">
+                        <input type="text" value="Sort By | Recommended" disabled>
+                </div>
+            </div>
+            <div class="car-grid">
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA COROLLA ALTIS 2023</h3>
+                    <p>⭐(2,892 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>        
+                    <span>₱ 4,500/Day</span>         
+                    <a href="car-details.html"><button>See More</button></a>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA VIOS 1.3 XE CVT</h3>
+                    <p>⭐(2,892 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>     
+                    <span>₱ 4,500/Day</span>            
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA VIOS 1.5 XE CVT</h3>
+                    <p>⭐(2,892 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA INNOVA 2023</h3>
+                    <p>⭐(3,500 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 3,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA FORTUNER 2023</h3>
+                    <p>⭐(4,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                     <span>₱ 4,500/Day</span>
+                     <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                <div class="car-item">
+                    <img src="images/corolla-toyota.png" alt="Toyota Corolla 2023">
+                    <h3>TOYOTA AVANZA 2023</h3>
+                    <p>⭐(3,200 Reviews)</p>
+                    <p>📍 Pulilan, Bulacan</p>
+                    <p> 🚗 7 Seats ⛽ Gas ⚙️ CVT</p>
+                    <span>₱ 4,500/Day</span>
+                    <button>See More</button>
+                </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/Ellipse 4.png" alt="Smart Rent Logo">
+                <p>"Smart Rental provides reliable, affordable, and hassle-free car rentals for every journey. Whether
+                    it's a short trip or a long adventure, we ensure a smooth and comfortable ride every time."</p>
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Details</li>
+                    <li>Operating Hours</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Browse Cars</li>
+                    <li>Pricing</li>
+                    <li>FAQs</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Booking Assistance</li>
+                    <li>Cancellation &
+                        Refund Policy</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Your Email Address">
+                <button>Subscribe</button>
+                <p>Subscribe to our newsletter to receive the latest news, updates, and special offers.</p>
+                <div class="payment-methods">
+                    <h3>Payment Methods</h3>
+                    <img src="images/image 61.png" alt="Visa">
+                    <img src="images/image 62.png" alt="MasterCard">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>© 2025 Smart Rental. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
