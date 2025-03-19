@@ -152,7 +152,7 @@ nav ul li a:hover {
     text-align: center;
     color: white;
     height: 710px;
-    background: url('images/woman-sits-car-holds-out-her-hand-receive-car-keys\ 1.png')center/cover no-repeat;
+    background: url('images/woman-sits-car-holds-out-her-hand-receive-car-keys\ 1.png') center/cover no-repeat;
 }
 
 .main h1 {
@@ -361,20 +361,16 @@ nav ul li a:hover {
     text-align: center;
     font-size: 45px;
     letter-spacing: 2.0px;
-    font-family: 'Poppins' sans-serif;
+    font-weight: 600;
 }
 
 .discount {
     color: #158362;
     text-align: center;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.discount span {
-    color: #158362;
-    font-weight: 400;
-}
 
 .car-cards {
     display: inline-block;
@@ -394,8 +390,6 @@ nav ul li a:hover {
     /* Slightly increase the size */
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     /* Add a shadow effect */
-    transition: transform 0.3s, box-shadow 0.3s;
-    /* Smooth transition */
 }
 
 .car-card {
@@ -427,6 +421,7 @@ nav ul li a:hover {
     margin: 25px 0;
     text-align: center;
     font-size: large;
+    font-weight: 700;
 
 }
 
@@ -434,6 +429,7 @@ nav ul li a:hover {
     margin-top: 5px;
     text-align: justify;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .car-card a button {
@@ -451,6 +447,7 @@ nav ul li a:hover {
 
 .car-card span {
     color: #000000;
+    font-weight: 500;
 }
 
 .car-card button:hover {
@@ -479,7 +476,21 @@ hr {
     /* Increased speed */
 }
 
+/* Slider Button Styles */
+.slider-button.left, .slider-button.right {
+    width: 50px; /* Increased width for better usability */
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px;
+    font-weight: 800;
+    margin: auto;
+    transition: background-color 0.3s, border 0.3s; /* Added transition for hover effects */
+}
 
+.slider-button.left:hover, .slider-button.right:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    border: 2px solid #2FCB9C; /* Add border on hover */
+}
 
 /* Media Queries */
 @media (max-width: 1024px) {
@@ -646,98 +657,12 @@ hr {
     }
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .auth-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .main h1 {
-        font-size: 2em;
-    }
-
-    .main p {
-        font-size: 1em;
-    }
-
-    .booking-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .booking-item {
-        border-right: none;
-        padding-right: 0;
-    }
-
-    .book-btn {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .text-content,
-    .image {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 10px 20px;
-    }
-
-    .top-bar div {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .main h1 {
-        font-size: 1.5em;
-    }
-
-    .main p {
-        font-size: 0.8em;
-    }
-
-    .booking-container {
-        padding: 15px 20px;
-    }
-
-    .book-btn {
-        padding: 10px 20px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    .title {
-        font-size: 25px;
-    }
-
-    .text {
-        font-size: 14px;
-    }
-}
-
 footer {
     background-color: #115742;
     color: white;
     padding: 30px 70px;
     font-family: 'poppins', sans-serif;
     margin-top: 30px;
-
-
 }
 
 .footer-container {
@@ -836,7 +761,6 @@ footer {
 }
 
 .payment-methods h3 {
-
     margin-bottom: 10px;
     font-weight: 400;
 }
@@ -858,7 +782,6 @@ footer {
     text-decoration: none;
 }
 
-
 /* Login Page */
 
 .login-page-container {
@@ -869,10 +792,8 @@ footer {
 /* Container */
 .login-container {
     display: block;
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
-
-
 }
 
 /* Login Box */
@@ -881,12 +802,12 @@ footer {
     color: white;
     padding: 50px 50px;
     padding-top: 70px;
-    border-radius: 10px;
-    width: 510px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 23px;
+    width: 490px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     position: absolute;
-    left: 670px;
-    top: 21%;
+    left: 620px;
+    top: 25%;
 }
 
 .login-box h2 {
@@ -903,13 +824,15 @@ footer {
     text-align: center;
 }
 
-.logo img {
-    border-radius: 50%;
-    width: 200px;
+.login-container img {
+    width: 300px;
     height: auto;
     margin-bottom: 28px;
     position: relative;
-    left: 40px;
+    left: 120%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Form */
@@ -1015,13 +938,24 @@ button {
 .circle {
     width: 750px;
     height: 770px;
-    background: linear-gradient(to bottom, #1c4b37, #37a476);
+    background: linear-gradient(to bottom, #0B3D2E, #2FCB9C);
     border-radius: 50%;
     position: absolute;
     top: 30%;
     left: 90%;
     transform: translate(-50%, -50%);
     z-index: -1;
+}
+.circle.two{
+    width: 770px;
+    height: 800px;
+    background: linear-gradient(to bottom, #0B3D2E, #2FCB9C);
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translate(-8%, 30%);
+    z-index: -2;
 
 }
 
@@ -1033,6 +967,174 @@ button {
     width: 100%;
 }
 
+/*Sign Up Page*/
+.signup-container {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 740px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.signup-form {
+    flex: 1;
+    padding: 50px;
+    background: #115742;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    left: 40px;
+}
+.signup-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.signup-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.signup-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.signup-row{
+    display: flex;
+    gap: 30px;
+}
+.signup-group input {
+    width: 140%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: auto;
+}
+.signup-group-lastname{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.signup-group-lastname input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    left: 20%;
+    margin: auto;
+    margin-left: 60px;
+}
+.signup-group-lastname label{
+    margin-left: 65px;
+}
+.signup-group-email {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.signup-group-email input{
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    left: 10%;
+}
+.signup-group-phone {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+}
+.signup-group-phone label{
+    margin-bottom: 5px;
+}
+.signup-group-phone input{
+    width: 120%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    left: 10%;
+}
+.signup-row-password {
+    display: flex;
+    gap: 90px;
+}
+.signup-group-confirm{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.signup-group-confirm input{
+    margin-top: 15px;
+    width: 125%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    left: 50%;
+}
+.signup-terms {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.signup-terms label{
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 300;
+}
+.signup-terms a{
+    font-weight: 600;
+    color: #ffffff;
+}
+.signup-terms input {
+    margin-right: 80px;
+    cursor: pointer;
+}
+.signup-btn {
+    background: black;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.signup-btn:hover {
+    background: #06c54f;
+}
+.signup-signin {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.signup-signin a {
+    color: #2FCB9C;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.signup-car-container {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 300px;
+}
 
 /* Responsive design */
 @media (max-width: 760px) {
@@ -1053,21 +1155,16 @@ button {
 .team-section h2 {
     text-align: center;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
     margin-top: 20px;
-    border: 2px solid #000000;
-    /* Added border */
+    border: 1px solid #000000;
     padding: 30px;
-    /* Added padding for better appearance */
     border-radius: 25px;
     max-width: 28%;
     margin-left: auto;
-    /* Center horizontally */
     margin-right: auto;
-    /* Center horizontally */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    /* Added drop shadow */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .team-section p {
@@ -1083,41 +1180,40 @@ button {
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
-    /* Added border-radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Added box-shadow for a subtle shadow effect */
     flex-direction: column;
     display: flex;
+
 }
 
-
-
 .carousel-container .prev {
-    left: 10px;
+    left: 45px;
     position: absolute;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: #000000;
     padding: 3px;
     cursor: pointer;
     z-index: 1;
-    border-radius: 100px;
+    border-radius: 0 3px 3px 0;
     max-width: 40px;
+    font-weight: 1000;
 }
 
 .carousel-container .next {
     right: 10px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: #000000;
     padding: 3px;
     cursor: pointer;
     z-index: 1;
-    border-radius: 100px;
+    border-radius: 0 3px 3px 0;
     max-width: 40px;
+    user-select: none;
+    font-weight: 1000;
 }
 
 .carousel-container .prev:hover,
@@ -1131,7 +1227,6 @@ button {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 300%;
-    /* Allows smooth sliding */
 }
 
 .team-member {
@@ -1174,7 +1269,6 @@ button {
     background-color: #0F3D2E;
     animation: hoverAnimation 0.5s linear;
 }
-
 @keyframes hoverAnimation {
     0% {
         transform: scale(1);
@@ -1191,7 +1285,7 @@ button {
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
     width: 300%;
     overflow: hidden;
 }
@@ -1209,12 +1303,12 @@ button {
     margin-top: 15px;
 }
 
-.dot {
+.dot{
     height: 10px;
     width: 10px;
     margin: 5px;
     background-color: grey;
-    border-radius: 50%;
+    border-radius: 100%;
     /* Changed to 50% for circular dots */
     display: inline-block;
     cursor: pointer;
@@ -1350,7 +1444,6 @@ button {
     color: white;
 }
 
-
 /* Form Container */
 .form-container {
     display: flex;
@@ -1362,6 +1455,88 @@ button {
     margin: 0 auto;
     /* Center the form container */
     margin-top: 80px;
+    align-items: center;
+    padding-bottom: 120px;
+    margin-bottom: 60px;
+}
+
+/* Car Details */
+.car-details-form,
+.rental-details {
+    width: 50%;
+    margin-left: 60px;
+
+}
+
+.car-details h3,
+.rental-details h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Vertical Line */
+
+.vertical-break {
+    border-left: 1px solid #A19E9E;
+    /* Adjust the color and width as needed */
+    height: 100%;
+    /* Adjust the height as needed */
+    display: inline-block;
+    /* Ensure the element is displayed inline */
+    min-height: 500px;
+    /* Added minimum height to make it visible */
+}
+
+.vertical-break-index {
+    height: 100%;
+    border-left: 1px solid #A19E9E;
+    display: inline-block;
+    min-height: 60px;
+}
+
+.car-details-form span {
+    background-color: #d9d9d9;
+    padding: 5px;
+    border-radius: 7px;
+    color: #000000;
+    margin-left: 44px;
+    /* Align with car-details p */
+    font-weight: 400;
+}
+
+.car-details-form label {
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.rental-details label {
+    font-weight: 600;
+}
+
+.rental-details p {
+    font-weight: 600;
+}
+
+.rental-details strong {
+    font-weight: 400;
+    color: #ABABAB;
+    margin-left: 10px;
+}
+
+/* Inputs */
+.rental-details select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.rental-details input {
+    width: 100%;
+    padding: 8px;
     align-items: center;
     padding-bottom: 120px;
     margin-bottom: 60px;
@@ -2014,36 +2189,36 @@ strong {
 
 /* Car Details */
 .car-details-container {
-    width: 85%;
-    margin: auto;
-    background: #fff;
+    width: 100%;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.car-detail {
+    width: 100%;
+   margin: auto;
 }
 .car-details {
     display: block;
     position: absolute;
     margin-left: 45%;
-    width: 40%;
+    width: 50%;
     padding: 50px;
 }
 .car-details h2 {
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 600;
 }
 .car-details span{
     font-size: 20px;
-    color: #0B3D2E;
-    font-weight: 500;
+    color: #000000;
+    font-weight: 300;
 }
 .car-details p{
-    font-size: 15px;
+    font-size: 18px;
     margin-right: 30px;
+    font-weight: 600;
 
-}
-.car-details strong {
-    right: 40%;
-    
 }
 .car-details-main-image {
     width: 100%;
@@ -2056,24 +2231,33 @@ strong {
     border-radius: 10px;
 }
 .car-thumbnails {
-    display: block;
+    display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 24px;
 }
 .car-thumbnails img {
     display: flex;
-    width: 220px;
+    width: 100%;
+    max-width: 1200px;
     height: auto;
     cursor: pointer;
     margin: 10px;
     border: 2px solid transparent;
     transition: border 0.3s;
     margin-top: 20px;
-}
-.car-thumbnails img:hover {
-    border: 2px solid #2FCB9C;
+    object-fit: cover;
     border-radius: 10px;
 }
+.car-thumbnails img:hover{
+    border: 2px solid #2FCB9C;
+    border-radius: 10px;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
 .car-detail {
     display: flex;
     flex-direction: column;
@@ -2103,14 +2287,45 @@ strong {
     background-color: #0B3D2E;
     color: white;
     border: none;
-    padding: 15px 20px;
+    padding: 13px 22px;
     font-size: 16px;
     cursor: pointer;
     display: block;
     text-align: center;
     border-radius: 20px;
     text-decoration: none;
-    width: 20%;
     position: absolute;
     align-self: flex-end;
+    top: 71%;
+    right: 15%;
+}
+.slider-button.left, .slider-button.right{
+    width: 40px;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 800;
+    padding: 5px;
+    border: none;
+    border-radius: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.details-btn{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 10%;
+    position: absolute;
+    align-self: flex-end;
+    left: 30px;
+    margin-top: 3px;
 }

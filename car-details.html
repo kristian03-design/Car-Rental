@@ -56,12 +56,16 @@
             </div>
         </div>
     </header>
+    <a href="rent-cars.html"><button class="details-btn">Home / Car Details</button></a>
     <div class="car-details-container">
         <div class="car-detail">
-            <div class="car-slider">
-                <div class="car-details-image">
-                    <img id="car-details-img" src="images/toyota-vios-car-details.png" class="car-detail-img" alt="Car Image 1">
-                </div>
+                <div class="car-slider">
+                    <div class="car-details-image">
+                        <img id="car-details-img" src="images/toyota-vios-car-details.png" class="car-detail-img" alt="Car Image 1">
+                        <button class="slider-button left" onclick="prevImage()">&#10094;</button>
+                        <button class="slider-button right" onclick="nextImage()">&#10095;</button>
+                    </div>
+
                 <div class="car-thumbnails">
                     <img src="images/toyota-corolla-small-img.png" onclick="changeImage('images/toyota-corolla-small-img.png')" alt="Car Image 1">
                     <img src="images/toyota-corolla-small-img-back.png" onclick="changeImage('images/toyota-corolla-small-img-back.png')" alt="Toyota Corolla Side">
@@ -70,18 +74,18 @@
             </div>
             <div class="car-details">
                 <h1>Toyota Corolla Altis 2023</h1>
-                <p><strong>⭐⭐⭐⭐⭐ 4.8</strong> (Based on 120 reviews)</p>
+                <p>⭐⭐⭐⭐⭐ 4.8 <span>(Based on 120 reviews)</p></span>
                 <h3>Available ✅</h3>
-                <p><strong>Category:</strong> Sedan</p>
-                <p><strong>Seating Capacity:</strong> 5 persons</p>
-                <p><strong>Luggage Capacity:</strong> 2 large bags + 2 small bags</p>
-                <p><strong>Transmission:</strong>Continuously Variable Transmission (CVT)</p>
-                <p><strong>Fuel Type:</strong> Hybrid (Gasoline + Electric)</p>
-                <p><strong>Engine Power:</strong> 1.8L 4-cylinder, 121 HP</p>
+                <p>Category: <span>Sedan</p></span>
+                <p>Seating Capacity: <span>5 persons</p></span>
+                <p>Luggage Capacity: <span>2 large bags + 2 small bags</p></span>
+                <p>Transmission: <span>Continuously Variable Transmission (CVT)</p></span>
+                <p>Fuel Type: <span>Hybrid (Gasoline + Electric)</p></span>
+                <p>Engine Power: <span>1.8L 4-cylinder, 121 HP</p></span>
                 <h2>Rental Price:</h2>
                 <span>Php 3,000 / Day</span>
-                <a href="#" class="car-details-btn">Book Now</a>
             </div>
+            <a href="#" class="car-details-btn">Book Now</a>
         </div>
         <div class="car-description">
             <h2>Car Description</h2>
@@ -147,8 +151,27 @@
     </div>
     <!--Script Image Slider -->
     <script>
+        const images = [
+            'images/toyota-vios-car-details.png',
+            'images/toyota-corolla-small-img.png',
+            'images/toyota-corolla-small-img-back.png',
+            'images/toyota-corolla-small-img-side.png'
+        ];
+        let currentIndex = 0;
+
         function changeImage(imageSrc) {
             document.getElementById('car-details-img').src = imageSrc;
+            currentIndex = images.indexOf(imageSrc);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            document.getElementById('car-details-img').src = images[currentIndex];
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            document.getElementById('car-details-img').src = images[currentIndex];
         }
     </script>
 </body>
